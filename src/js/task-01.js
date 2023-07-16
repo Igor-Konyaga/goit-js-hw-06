@@ -1,4 +1,3 @@
-/*----------------------- Завдання 1 ---------------------*/
 
 const itemsEl = document.querySelectorAll('.item');
 console.log(`Number of categories: ${itemsEl.length}`);
@@ -8,7 +7,4 @@ itemsEl.forEach(el => {
 	console.log(`Elements: ${el.lastElementChild.children.length}`);
 });
 
-/*---------------------------------------------------------*/
-
-/*----------------------- Завдання 2 ---------------------*/
 
