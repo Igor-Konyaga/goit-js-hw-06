@@ -6,12 +6,12 @@ formEl.addEventListener('submit', handleSubmissionForm)
 function handleSubmissionForm (e) {
 	e.preventDefault();
 
-const currentEmailLength = e.currentTarget.elements.email.value.length;
-const currentPasswordLength = e.currentTarget.elements.password.value.length;
+const currentEmail = e.currentTarget.elements.email.value;
+const currentPassword = e.currentTarget.elements.password.value;
 
 
-if (currentEmailLength < 1 || currentPasswordLength < 1) {
-	alert('Усі поля повинні бути заповлені!!!')
+if (currentEmail === '' || currentPassword === '' || currentPassword === ' ') {
+	return alert('Усі поля повинні бути заповлені!!!');
 };
 
 const formData = {
@@ -19,9 +19,15 @@ const formData = {
 	password: `${e.currentTarget.elements.password.value}`,
 }
 
-console.log(formData);
+console.log(formData)
 
 e.currentTarget.reset();
+
+formData.email = '';
+formData.password = '';
+
+console.log(formData)
+
 };
 
 

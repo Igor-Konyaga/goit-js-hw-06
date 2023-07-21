@@ -10,6 +10,7 @@ const valueColorEl = document.querySelector('.color');
 btnEl.addEventListener('click', handalClickBtn);
 
 function handalClickBtn (e) {
-	document.body.style.backgroundColor = getRandomHexColor();
-	valueColorEl.textContent = getRandomHexColor();
+	const resultColor = getRandomHexColor();
+	document.body.style.backgroundColor = resultColor;
+	valueColorEl.textContent = resultColor;
 } ;

@@ -5,9 +5,9 @@ const textEl = document.getElementById('text');
 
 inputEl.addEventListener('input', handleСhangeSize);
 
-function handleСhangeSize (e) {
-const currentValue = e.currentTarget.value;
+function handleСhangeSize () {
 	
-textEl.style.fontSize =`${currentValue}px`;
+textEl.style.fontSize =`${inputEl.value}px`;
 
 };
+handleСhangeSize();
