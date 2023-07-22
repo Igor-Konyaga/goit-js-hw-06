@@ -4,7 +4,7 @@ const LengthEl = Number(inputEl.dataset.length);
 inputEl.addEventListener('blur', handleVerifyLength);
 
 function handleVerifyLength (e) {
-	const currentInputLength = e.currentTarget.value.length;
+	const currentInputLength = e.currentTarget.value.trim().length;
 
 	if ( currentInputLength === LengthEl) {
 		inputEl.classList.remove('invalid')

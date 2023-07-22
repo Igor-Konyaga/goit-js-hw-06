@@ -10,7 +10,7 @@ const currentEmail = e.currentTarget.elements.email.value;
 const currentPassword = e.currentTarget.elements.password.value;
 
 
-if (currentEmail === '' || currentPassword === '' || currentPassword === ' ') {
+if (currentEmail === '' || currentPassword.trim() === '') {
 	return alert('Усі поля повинні бути заповлені!!!');
 };
 

@@ -10,7 +10,7 @@ function handleInputText (e) {
 	if (e.currentTarget.value === ''){
 	nameEl.textContent = 'Anonymous';
 	} else {
-		nameEl.textContent =	e.currentTarget.value;
+		nameEl.textContent =	e.currentTarget.value.trim();
 	}
 };
 
